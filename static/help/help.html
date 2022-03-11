@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <link rel="icon" type="image/png" href="static/home/images/icon.png" />
+	<title>Connaro - Solidarity</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!--// Meta tag Keywords -->
+
+	<!-- Custom-Files -->
+	<link rel="stylesheet" href="static/home/bootstrap.css">
+	<!-- Bootstrap-Core-CSS -->
+	<link href="static/home/home.css" rel="stylesheet">
+	<!-- Style-CSS -->
+	<link href="static/home/font-awesome.min.css" rel="stylesheet">
+	<!-- Font-Awesome-Icons-CSS -->
+  <link href="static/help/help.css" rel="stylesheet">
+	<!-- //Custom-Files -->
+
+	<!-- Web-Fonts -->
+	<link
+		href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+		rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Tangerine:400,700" rel="stylesheet">
+	<!-- //Web-Fonts -->
+</head>
+
+<body>
+	<!-- home -->
+	<div id="home">
+		<!-- banner -->
+		<div class="banner_w3lspvt-2 text-center">
+			<!-- nav -->
+			<div class="nav_w3ls pt-4 pb-3 text-center position-static">
+				<nav>
+					<label for="drop" class="toggle">Menu</label>
+					<input type="checkbox" id="drop" />
+					<ul class="menu">
+						<li><a href="/">Home</a></li>
+					</ul>
+				</nav>
+			</div>
+			<!-- //nav -->
+			<div class="banner-inner">
+				<h1><a href="/" class="logo-2">Connaro</a></h1>
+			</div>
+		</div>
+		<!-- //banner -->
+	</div>
+	<!-- //home -->
+  <div class="py-xl-5 py-lg-3" style="padding-bottom:0px !important" >
+						<h3 class="tittle text-center">Solidarity is Key</h3>
+			<p  class="sub-tittle text-center mt-3 mb-sm-5 mb-4">Here, you can ask for help and give your help. Click below to make a post, and scroll down to see more posts. Please come here often to check if there is anything you could do to help.</p>
+  </div>
+  <!--post-->
+  <p class="sub-tittle text-center mt-3 mb-sm-5 mb-4" id="wrap-button-post"><a href="#post" id="postbutton">MAKE A POST</a></p>
+  <div id="post" class="popupbox">
+    	<div class="container-contact100">
+		<div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-scrollwhell="0" data-draggable="1"></div>
+
+		<div class="wrap-contact100">
+      <a href="#close" title="Close" class="close">X</a>
+			<div class="contact100-form-title" style="background-image: url(static/help/bg-01.jpg);">
+				<span class="contact100-form-title-1">
+					Make a post
+				</span>
+
+				<span class="contact100-form-title-2">
+					Don't forget to give as much details as possible. Also, by asking help, you agree to share your mail adress so that people can contact you back.
+				</span>
+			</div>
+
+			<form id="postform" class="contact100-form validate-form">
+					<div class="wrap-input100 validate-input" data-validate="Title is required">
+					<span class="label-input100">Title:</span>
+					<input autocomplete="off" id="formTitle" class="input100" type="text" name="title" placeholder="Write your title here">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Message is required">
+					<span class="label-input100">Message:</span>
+					<textarea id="formText" class="input100" name="message" placeholder="Please describe here why you need help, and don't forget to give details"></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button type="submit" form="postform" value="Submit" class="contact100-form-btn">
+						<span>
+							Submit
+							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+  </div>
+  <!--//post-->
+  <section class="about py-5" id="oldabout">
+		<div class="py-xl-5 py-lg-3" id="postbox">
+			
+		</div>
+	</section>
+	<!-- middle section -->
+	<div class="text py-5 text-center" id="newmiddlesection">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="row py-4">
+				<div class="col-md-12">
+					<h5 id="aboutheyo2" class="text-wh text-capitalize font-weight-bold let mb-4">Want to return to Main Menu?</h5>
+					<div class="text-center mt-sm-5 mt-4">
+						<a href="/" class="mr-2 work btn" id="aboutheyo">Main Menu</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //middle section -->
+	<!-- copyright -->
+	<div class="cpy-right text-center py-3">
+		<p>A website made for Replit's Discord Code Jam #9
+		</p>
+	</div>
+	<!-- //copyright -->
+	<!-- move top icon -->
+	<a href="#home" class="move-top text-center">
+		<span class="fa fa-chevron-circle-up" aria-hidden="true"></span>
+	</a>
+	<!-- //move top icon -->
+  <script src="static/help/help.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+
+</body>
+
+</html>
